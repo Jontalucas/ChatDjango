@@ -19,9 +19,13 @@ from . import views
 from cadastro_doador import views as cd_views
 from cadastro_adotante import views as ca_views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('chat', views.chat),
     path('cadastro_doador', cd_views.cadastro_doador),
-    path('cadastro_adotante', ca_views.cadastro_adotante)
+    path('cadastro_adotante', ca_views.cadastro_adotante),
+    path('login_adotante', ca_views.login_adotante),
+    path('login_doador', cd_views.login_doador),
+    path('criar_chat', views.criar_chat)
 ]
