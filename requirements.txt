@@ -13,3 +13,5 @@ sqlparse==0.4.3
 urllib3==1.26.13
 django-channels
 mysqlclient==2.2.0
+channels["daphne"]
+dotenv
